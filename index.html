@@ -39,7 +39,8 @@
         <!-- modernizr js -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <!-- owl carouserl js -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- bootstrap js -->
@@ -52,8 +53,49 @@
         <script src="js/jquery.fancybox.js"></script>
         <!-- template main js -->
         <script src="js/main.js"></script>
+		<style>
+		.img{
+		position: relative!important;
+		float: left !important;
+		width:  100px !important;
+		height: 100px !important;
+		background-position: 50% 50% !important;
+		background-repeat:   no-repeat !important;
+		background-size:     cover !important;
+		}
+		</style>
+		<style>
+		#loader {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  z-index: 1;
+		  width: 150px;
+		  height: 150px;
+		  margin: -75px 0 0 -75px;
+		  border: 16px solid #f3f3f3;
+		  border-radius: 50%;
+		  border-top: 16px solid #3498db;
+		  width: 120px;
+		  height: 120px;
+		  -webkit-animation: spin 2s linear infinite;
+		  animation: spin 2s linear infinite;
+		}
+
+		@-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+		}
+
+		@keyframes spin {
+		  0% { transform: rotate(0deg); }
+		  100% { transform: rotate(360deg); }
+		}
+		</style>
+
     </head>
     <body>
+	<div id="loader"></div>
         <!--
         ==================================================
         Header Section Start
@@ -170,7 +212,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                            <figure width="100px" class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                                 <div class="img-wrapper">
                                     <img src="images/projects/main/biped.png" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
@@ -195,10 +237,10 @@
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div class="img-wrapper">
-                                    <img src="images/projects/main/biped.png" class="img-responsive" alt="" >
+                                    <img src="images/projects/swarm.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/projects/main/biped.png">Demo</a>
+                                            <a rel="gallery" class="fancybox" href="images/projects/swarm.jpg">Demo</a>
                                             <a target="_blank" href="projects.html">Details</a>
                                         </div>
                                     </div>
@@ -210,7 +252,7 @@
                                 </a>
                                 </h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Group of robots that move in co-ordintation with one another
                                 </p>
                                 </figcaption>
                             </figure>
@@ -270,6 +312,11 @@
                     </div>
                 </div>
             </footer> <!-- /#footer -->
-                
+            
+			<script>
+				 $(window).load(function() {
+				 $('#loader').hide();
+			  });
+			</script>
         </body>
     </html>
