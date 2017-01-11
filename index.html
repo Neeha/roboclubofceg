@@ -39,7 +39,8 @@
         <!-- modernizr js -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <!-- owl carouserl js -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- bootstrap js -->
@@ -51,7 +52,7 @@
         <script src="js/slider.js"></script>
         <script src="js/jquery.fancybox.js"></script>
         <!-- template main js -->
-        <script src="js/main.js"></script>
+        <script src="js/main.js"></script>			
     </head>
     <body>
         <!--
@@ -170,12 +171,11 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                            <figure width="100px" class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                                 <div class="img-wrapper">
                                     <img src="images/projects/main/biped.png" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
                                         <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/projects/main/biped.png">Demo</a>
                                             <a target="_blank" href="projects.html">Details</a>
                                         </div>
                                     </div>
@@ -195,10 +195,9 @@
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div class="img-wrapper">
-                                    <img src="images/projects/main/biped.png" class="img-responsive" alt="" >
+                                    <img src="images/projects/main/swarm.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/projects/main/biped.png">Demo</a>
                                             <a target="_blank" href="projects.html">Details</a>
                                         </div>
                                     </div>
@@ -210,7 +209,7 @@
                                 </a>
                                 </h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Group of robots that move in co-ordintation with one another
                                 </p>
                                 </figcaption>
                             </figure>
@@ -221,7 +220,6 @@
                                     <img src="images/projects/main/chess.png" class="img-responsive" alt="" >
                                     <div class="overlay">
                                         <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="images/projects/main/chess.png">Demo</a>
                                             <a target="_blank" href="projects.html">Details</a>
                                         </div>
                                     </div>
@@ -270,6 +268,11 @@
                     </div>
                 </div>
             </footer> <!-- /#footer -->
-                
+            
+			<script>
+				 $(window).load(function() {
+				 $('#loader').hide();
+			  });
+			</script>
         </body>
     </html>
