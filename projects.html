@@ -58,6 +58,18 @@
             .active{
                 color: #00a4ba !important;
             }
+            @media screen and (min-width:800px)
+            {
+                .ceglogo {
+                    display: block;
+                }
+            }
+            @media screen and (max-width:800px)
+            {
+                .ceglogo {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
@@ -84,9 +96,10 @@
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <nav class="collapse navbar-collapse" role="navigation" style="padding-left: 55%;">
+                <img class="navbar-right ceglogo" src="images/ceg.jpg" style="width: 65px;">
                     <div class="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav">
                             <li>
                                 <a href="index.html" >Home</a>
                             </li>
@@ -229,26 +242,16 @@ TASKS IT CAN PERFORM:
                         <!-- Social Media -->
                         <ul class="social">
                             <li>
-                                <a href="#" class="Facebook">
+                                <a href="https://www.facebook.com/roboticsclubofceg/?fref=ts" target="_blank" class="Facebook">
                                     <i class="ion-social-facebook"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" class="Twitter">
-                                    <i class="ion-social-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Linkedin">
-                                    <i class="ion-social-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Google Plus">
-                                    <i class="ion-social-googleplus"></i>
-                                </a>
-                            </li>
                             
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCJQaYwgmUeCVwWwkauFiYHA" target="_blank" class="Youtube">
+                                    <i class="ion-social-youtube"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

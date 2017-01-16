@@ -57,6 +57,18 @@
             .active{
                 color: #00a4ba !important;
             }
+            @media screen and (min-width:800px)
+            {
+                .ceglogo {
+                    display: block;
+                }
+            }
+            @media screen and (max-width:800px)
+            {
+                .ceglogo {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
@@ -83,9 +95,10 @@
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <nav class="collapse navbar-collapse" role="navigation" style="padding-left: 55%;">
+                <img class="navbar-right ceglogo" src="images/ceg.jpg" style="width: 65px;">
                     <div class="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav">
                             <li>
                                 <a href="index.html" >Home</a>
                             </li>                            
@@ -142,7 +155,7 @@
                                             Email : k.udhay@gmail.com
                                         </p>
                                         <hr>
-                                        <div class="media">                                            
+                                        <div class="media" style="padding-top: 5px; padding-bottom: 5px;">                                            
                                             <div class="media-body">
                                                 <h4 class="media-heading">
                                                 16 years experience<br/>
@@ -165,20 +178,21 @@
                                         Dr. J. Kamala</h4>
                                         <p>
                                             Assistant Professor, <br/>
-                                            Dept. of EEE, <br/>
+                                            Dept. of ECE, <br/>
                                             Anna University, <br/>
                                             Chennai 600025.<br/>
-                                            Email : k.udhay@gmail.com
+                                            Email : 
                                         </p>
                                         <hr>
-                                        <div class="media">                                            
-                                            <div class="media-body">
-                                                <h4 class="media-heading">
-                                                16 years experience<br/>
-                                                30 papers published<br/>
-                                                Deputy Director CUIC<br/>
-                                                Advisor - Robotics Club of CEG
-                                                </h4>
+                                        <div class="media" style="padding-top: 5px; padding-bottom: 5px;">                               <div class="media-body">
+                                                <!-- <h4 class="media-heading"> -->
+                                                <ul>
+                                                <li>VSSC, ISRO, Trivandrum - Graduate Apprentice Trainee - 1 Year</li>
+                                                <li>Dr. Navalar Nedunchezhiyan college of Engg. - Lecturer - 7 Years</li>
+                                                <li>College of Engineering Guindy, Anna University - Assistant Professor - 9 Years </li>
+                                                <li>Treasurer - Robotics Club of CEG</li>
+                                                </ul>
+                                                <!-- </h4> -->
                                             </div>
                                         </div>                                       
                                         
@@ -205,16 +219,16 @@
                         <!-- Social Media -->
                         <ul class="social">
                             <li>
-                                <a href="https://www.facebook.com/groups/386254308057873/" class="Facebook">
+                                <a href="https://www.facebook.com/roboticsclubofceg/?fref=ts" target="_blank" class="Facebook">
                                     <i class="ion-social-facebook"></i>
-                                </a>
-                            </li>                            
-                            <li>
-                                <a href="#" class="Google Plus">
-                                    <i class="ion-social-googleplus"></i>
                                 </a>
                             </li>
                             
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCJQaYwgmUeCVwWwkauFiYHA" target="_blank" class="Youtube">
+                                    <i class="ion-social-youtube"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
