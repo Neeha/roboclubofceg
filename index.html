@@ -58,6 +58,18 @@
             .active{
                 color: #00a4ba !important;
             }
+            @media screen and (min-width:800px)
+            {
+                .ceglogo {
+                    display: block;
+                }
+            }
+            @media screen and (max-width:800px)
+            {
+                .ceglogo {
+                    display: none;
+                }
+            }
         </style>			
     </head>
     <body>
@@ -66,7 +78,7 @@
         Header Section Start
         ================================================== -->
         <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
+            <div class="container" style="width: 95%;">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -81,6 +93,9 @@
                     <div class="navbar-brand">
                             <img src="images/logo.png" alt="">
                     </div>
+                    <!-- <div class="navbar-brand pull-right">
+                            <img src="images/ceg.jpg" alt="">
+                    </div> -->
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
@@ -98,13 +113,20 @@
                                     <ul>
                                         <li><a href="about.html">Team</a></li>
                                         <li><a href="alumni.html">Alumni</a></li>
+                                        <li><a href="faculty.html">Faculty</a></li>
                                     </ul>
                                 </div>
-                            </li>                            
+                            </li>  
+                            <!-- <li class="ceglogo">
+                             <img src="images/ceg.jpg" style="width: 65px;">
+                            </li>  -->                         
                         </ul>
                     </div>
                 </nav>
-                <!-- /main nav -->
+                <div class="navbar-right" style="padding-left: 200px;">
+                <img src="images/ceg.jpg" style="width: 65px;">
+                </div>
+                <!-- /main nav -->                
             </div>
         </header>
         
